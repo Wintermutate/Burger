@@ -1,7 +1,7 @@
 var orm = require ('../config/orm.js');
 
 var burger = {
-	all: function (calback) {
+	all: function (callback) {
 		orm.all('burgers', function(res){
 			callback(res);
 		});

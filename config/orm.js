@@ -52,7 +52,7 @@ var orm ={
 	update: function (table, objectColumnValues, condition, callback){
 		var queryString = 'UPDATE ' + table;
 
-		querystring += ' SET ';
+		queryString += ' SET ';
 		queryString += objectToSql(objectColumnValues);
 		queryString += ' WHERE ';
 		queryString += condition;
